@@ -16,7 +16,7 @@
   ];
 @endphp
 
-<x-layout class="flex flex-col gap-12">
+<x-layouts.main class="flex flex-col gap-12">
   <x-card class="flex items-center justify-center gap-5">
     <img class="size-32 rounded-full" src="{{ $user['avatar'] }}" />
     <div class="flex flex-1 flex-col gap-2">
@@ -48,4 +48,4 @@
       </a>
     @endforeach
   </x-card>
-</x-layout>
+</x-layouts.main>

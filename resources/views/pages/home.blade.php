@@ -17,7 +17,7 @@
   );
 @endphp
 
-<x-layout class="flex flex-col gap-12 md:flex-row">
+<x-layouts.main class="flex flex-col gap-12 md:flex-row">
   <section class="flex w-full flex-col gap-12 md:w-2/3">
     @foreach ($posts as $post)
       <x-card class="flex flex-col">
@@ -82,4 +82,4 @@
       </ul>
     </x-card>
   </aside>
-</x-layout>
+</x-layouts.main>

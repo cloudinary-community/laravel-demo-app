@@ -17,7 +17,7 @@
   });
 @endphp
 
-<x-layout>
+<x-layouts.main>
   <x-card class="flex flex-row overflow-hidden p-0">
     <img class="border-r border-zinc-200 dark:border-white/[0.05]" src="{{ $post['image'] }}" />
     <div>
@@ -52,4 +52,4 @@
       </ul>
     </div>
   </x-card>
-</x-layout>
+</x-layouts.main>
