@@ -1,3 +1,5 @@
+import forms from '@tailwindcss/forms'
+
 export default {
     content: [
         './storage/framework/views/*.php',
@@ -10,4 +12,7 @@ export default {
             },
         },
     },
+    plugins: [
+        forms,
+    ],
 };
