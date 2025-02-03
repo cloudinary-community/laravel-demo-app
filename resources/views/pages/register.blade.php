@@ -1,21 +1,20 @@
-<x-layouts.auth title="Login">
+<x-layouts.auth title="Lets get started">
   <x-card class="mx-auto mt-24 flex max-w-3xl flex-col items-center py-12">
     <a class="flex items-center gap-3" href="{{ route('home') }}">
       <x-logo class="h-24 w-auto text-laravel" />
     </a>
 
-    <h1 class="mb-4 mt-8 text-xl font-semibold text-white/80">Lets get started</h1>
+    <h1 class="mb-4 mt-8 text-xl font-semibold dark:text-white/80">Lets get started</h1>
 
     <form
       class="flex w-1/2 flex-col gap-4"
-      action="{{ route('login') }}"
+      action="{{ route('register') }}"
       method="POST"
     >
       @csrf
 
       <x-input
         label="Your Name"
-        type="name"
         name="name"
         placeholder="Jane Doe"
         required
@@ -31,7 +30,6 @@
 
       <x-input
         label="Username"
-        type="username"
         name="username"
         placeholder="janedoe"
         required
@@ -48,15 +46,14 @@
       <x-input
         label="Confirm Password"
         type="password"
-        name="confirm_password"
+        name="password_confirmation"
         placeholder="hunter2"
         required
       />
 
-      <button class="mt-4 w-full rounded-lg bg-laravel py-3 font-semibold text-white hover:bg-laravel/70"
-        type="submit">
+      <x-button class="mt-4" type="submit">
         Register
-      </button>
+      </x-button>
 
       <p class="mt-4 flex items-center justify-center gap-1">
         <span>Already have an account?</span>

@@ -1,22 +1,33 @@
 {
-    "name": "laravel/laravel",
+    "name": "cloudinary-laravel/laragram",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "Instagram like app built with Laravel and Cloudinary",
+    "keywords": [
+        "laravel",
+        "framework",
+        "cloudinary"
+    ],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh Manders",
+            "homepage": "https://github.com/joshmanders"
+        }
+    ],
     "require": {
         "php": "^8.2",
+        "cloudinary-labs/cloudinary-laravel": "dev-next",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.13",
         "fakerphp/faker": "^1.23",
         "laravel/pint": "^1.13",
-        "laravel/sail": "^1.26",
         "mockery/mockery": "^1.6",
-        "nunomaduro/collision": "^8.0",
         "pestphp/pest": "^2.34",
-        "pestphp/pest-plugin-laravel": "^2.4"
+        "pestphp/pest-plugin-laravel": "^2.4",
+        "soloterm/solo": "^0.3.1"
     },
     "autoload": {
         "psr-4": {

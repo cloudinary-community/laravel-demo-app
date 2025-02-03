@@ -12,7 +12,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
     <!-- Styles & Scripts -->
-    @vite(['resources/client/app.css', 'resources/client/app.js'])
+    @vite(['resources/client/app.css', 'resources/client/app.ts'])
   </head>
 
   <body class="bg-[size:75%] bg-left-top bg-no-repeat font-sans antialiased dark:bg-black dark:text-white/50"
@@ -28,11 +28,17 @@
 
         <nav class="-mx-3 flex flex-1 justify-end">
           @auth
-            <a class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-laravel dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-              href="{{ url('/dashboard') }}"
-            >
-              Dashboard
-            </a>
+            <x-create-post />
+
+            <form method="post" action="{{ route('logout') }}">
+              @csrf
+              <button
+                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-laravel dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                type="submit"
+              >
+                <x-icons.logout class="size-6" />
+              </button>
+            </form>
           @else
             <a class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-laravel dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
               href="{{ route('login') }}"
@@ -45,7 +51,6 @@
             >
               Register
             </a>
-
           @endauth
         </nav>
       </div>
@@ -58,7 +63,6 @@
     <footer class="py-16 text-center text-sm text-black dark:text-white/70">
       Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
     </footer>
-
     </div>
   </body>
 
