@@ -44,7 +44,7 @@
         @endforeach
       </ul>
       @auth
-        <div class="mt-4 flex w-full items-center gap-3">
+        <div class="my-4 ml-4 flex w-full items-center gap-3">
           <x-avatar email="{{ auth()->user()->email }}" />
           <form
             class="flex flex-1 items-center gap-3"
