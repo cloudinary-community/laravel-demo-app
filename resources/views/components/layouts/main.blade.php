@@ -22,8 +22,8 @@
     <header class="border-b border-zinc-200 bg-white p-6 dark:border-white/[0.05] dark:bg-zinc-900">
       <div class="mx-auto flex w-full items-start gap-4 lg:max-w-6xl">
         <a class="flex items-center gap-3" href="{{ route('home') }}">
-          <x-logo class="h-6 w-auto text-laravel lg:h-8" />
-          <span class="text-xl text-laravel lg:text-2xl">Laragram</span>
+          <x-logo class="text-laravel h-6 w-auto lg:h-8" />
+          <span class="text-laravel text-xl lg:text-2xl">Laragram</span>
         </a>
 
         <nav class="-mx-3 flex flex-1 justify-end">
@@ -33,20 +33,20 @@
             <form method="post" action="{{ route('logout') }}">
               @csrf
               <button
-                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-laravel dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                class="focus-visible:ring-laravel rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                 type="submit"
               >
                 <x-icons.logout class="size-6" />
               </button>
             </form>
           @else
-            <a class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-laravel dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+            <a class="focus-visible:ring-laravel rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
               href="{{ route('login') }}"
             >
               Log in
             </a>
 
-            <a class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-laravel dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+            <a class="focus-visible:ring-laravel rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
               href="{{ route('register') }}"
             >
               Register

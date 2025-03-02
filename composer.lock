@@ -141,12 +141,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cloudinary-community/cloudinary-laravel.git",
-                "reference": "54285a7fc763e5b8cca67c3966246786c5ff25da"
+                "reference": "c5f509722e89411ca612a791fda0be1da55faaee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cloudinary-community/cloudinary-laravel/zipball/54285a7fc763e5b8cca67c3966246786c5ff25da",
-                "reference": "54285a7fc763e5b8cca67c3966246786c5ff25da",
+                "url": "https://api.github.com/repos/cloudinary-community/cloudinary-laravel/zipball/c5f509722e89411ca612a791fda0be1da55faaee",
+                "reference": "c5f509722e89411ca612a791fda0be1da55faaee",
                 "shasum": ""
             },
             "require": {
@@ -204,7 +204,7 @@
                 "issues": "https://github.com/cloudinary-community/cloudinary-laravel/issues",
                 "source": "https://github.com/cloudinary-community/cloudinary-laravel/tree/next"
             },
-            "time": "2025-03-01T22:59:31+00:00"
+            "time": "2025-03-02T03:29:59+00:00"
         },
         {
             "name": "cloudinary/cloudinary_php",
